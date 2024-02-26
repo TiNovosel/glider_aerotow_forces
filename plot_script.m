@@ -55,3 +55,8 @@ title('Rope tension forces in aerotow');
 legend({'Glider on ground', 'Glider in air', 'Max Force Overall', 'Max Force in Air', 'Avg Force on ground', 'Avg Force in air'}, 'Location', 'best');
 grid on
 hold off; % Release the plot hold
+
+%% saveas pdf
+set(gcf, 'PaperOrientation', 'landscape');
+print(gcf, 'myfigure.pdf', '-dpdf', '-bestfit');
+
