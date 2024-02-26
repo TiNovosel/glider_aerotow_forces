@@ -48,6 +48,7 @@ text(time(end), avg_force_phase2, [' Avg: ' num2str(avg_force_phase2, '%.2f') ' 
     'Color', 'blue', 'HorizontalAlignment', 'left');
 
 % Add labels, title, and legend
+xlim([min(time) max(time)]);
 xlabel('Time (seconds)');
 ylabel('Force (kN)');
 title('Rope tension forces in aerotow');
